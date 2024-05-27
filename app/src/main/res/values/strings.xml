@@ -105,6 +105,7 @@
     <string name="content">Content</string>
     <string name="title">Title</string>
     <string name="add_resource">Add Resource</string>
+    <string name="reload">Reload</string>
 
     <string-array name="campus_array">
         <item>All Campuses</item>
