@@ -5,8 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/AdminDashboard"
-    android:background="@drawable/background2"
+    android:background="@drawable/background1"
     tools:context=".AdminDashboard">
+
+
 
     <!-- Welcome Message TextView -->
     <TextView
@@ -27,87 +29,88 @@
         android:id="@+id/adminImageView"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/admin_logo"
+        android:src="@drawable/admin_image"
         android:contentDescription="@string/the_admin_image_placeholder"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/black"
         android:layout_marginTop="16dp" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
+        android:baselineAligned="false"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:weightSum="2"
-        android:baselineAligned="false">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="350dp"
+            android:layout_height="317dp"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/AdminView"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="8dp"
-                android:textColor="@color/black"
-                android:background="@drawable/square_button_background"
-                android:text="@string/view_appointments" />
+            <FrameLayout
+                android:id="@+id/flFragment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="184dp"
+                    android:layout_height="84dp"
+                    android:layout_margin="8dp"
+
+                    android:background="@drawable/square_button_background"
+                    android:text="@string/booking_history"
+                    android:textColor="@color/white" />
+            </FrameLayout>
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
+
+                android:id="@+id/button4"
+                android:layout_width="172dp"
+                android:layout_height="82dp"
                 android:layout_margin="8dp"
-                android:textColor="@color/black"
                 android:background="@drawable/square_button_background"
-                android:text="@string/booking_history" />
+                android:text="@string/feedback"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="350dp"
+            android:layout_height="371dp"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
+                android:layout_width="170dp"
+                android:layout_height="82dp"
                 android:layout_margin="8dp"
-                android:textColor="@color/black"
                 android:background="@drawable/square_button_background"
-                android:text="@string/manage_health_resources" />
+                android:text="@string/manage_health_resources"
+                android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
+                android:id="@+id/AdminView"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
                 android:layout_margin="8dp"
-                android:textColor="@color/black"
                 android:background="@drawable/square_button_background"
-                android:text="@string/feedback" />
+                android:text="@string/view_appointments"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
     </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/flFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
