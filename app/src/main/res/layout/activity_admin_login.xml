@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
+            android:background="@color/cardview_dark_background"
             android:padding="24dp">
 
             <TextView
@@ -45,7 +46,7 @@
                 android:drawablePadding="8dp"
                 android:hint="@string/email"
                 android:padding="8dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:layout_marginTop="40dp"
                 tools:ignore="Autofill"
@@ -61,7 +62,7 @@
                 android:hint="@string/password"
                 android:padding="8dp"
                 android:inputType="textPassword"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:layout_marginTop="20dp"
                 tools:ignore="Autofill" />
